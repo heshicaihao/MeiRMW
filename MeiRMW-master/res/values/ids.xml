@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="imageView1">false</item>
+    <item type="id" name="textView1">false</item>
+    <item type="id" name="slideSwitch1">false</item>
+    <item type="id" name="textView2">false</item>
+    <item type="id" name="slideSwitch2">false</item>
+    <item type="id" name="textView3">false</item>
+    <item type="id" name="slideSwitch3">false</item>
+    <item type="id" name="textViewTip">false</item>
+</resources>

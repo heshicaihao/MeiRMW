@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F3F7"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/line_down_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/line_down_radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="包括图片"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/line_down_radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="仅文字"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+</LinearLayout>

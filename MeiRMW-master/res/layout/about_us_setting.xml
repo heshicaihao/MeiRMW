@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F3F7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <ImageButton
+            android:id="@+id/about_us_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:padding="14dp"
+            android:src="@drawable/return_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="每日美文"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="        阅读舒适清新的文字！\n        虽然碎片化的时代已经让我们逐渐习惯于阅读更短小精悍的文字，但是，对长篇美文的阅读，依旧是我们的渴求！只有读这些经典，才能让我们感受文字的美好，才能让我们不至于被碎片化的信息爆炸所扰乱。真正的学习，真正的阅读，还要有这些经典的美文熏陶！\n        我们只提供经典！"
+        android:textSize="15sp" />
+
+</LinearLayout>

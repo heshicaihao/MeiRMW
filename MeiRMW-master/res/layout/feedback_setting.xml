@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F3F7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <ImageButton
+          android:id="@+id/feedback_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:padding="14dp"
+            android:src="@drawable/return_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/feedback_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/feedback_setting_send_bg"
+            android:text="发送"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/feedback_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/feedback_setting_bg"
+        android:gravity="left|top"
+        android:hint="我们用心来聆听来自您的声音..."
+        android:inputType="textMultiLine" />
+
+</LinearLayout>
