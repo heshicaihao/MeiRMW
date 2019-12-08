@@ -29,15 +29,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation 'com.heshicaihao:fastjson:0.0.1'
     implementation 'com.heshicaihao:menudrawer:0.0.0'
     implementation 'com.heshicaihao:slidingmenu:0.0.0'
     implementation 'com.heshicaihao:weibosdk:0.0.2'
     implementation 'com.heshicaihao:xutils:2.6.6'
-    implementation 'com.heshicaihao:fastjson:0.0.1'
-    implementation files('libs/Android_SDK.jar')
-    implementation files('libs/Android_SDK_component.jar')
-    implementation files('libs/GetuiExt-2.0.3.jar')
-    implementation files('libs/GetuiSdk2.4.1.0.jar')
-
 
 }
