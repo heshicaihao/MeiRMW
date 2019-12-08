@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/articleBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/article_bottom_menu_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/bottombarBack"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottombar_back_normal" />
+
+        <ImageButton
+            android:id="@+id/articleComment"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/button1"
+            android:layout_weight="1"
+            android:background="@drawable/article_comment_normal" />
+
+        <ImageButton
+            android:id="@+id/articleDislike"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_weight="1"
+            android:background="@drawable/article_dislike_normal" />
+
+        <ImageButton
+            android:id="@+id/icShare"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_weight="1"
+            android:background="@drawable/ic_share_normal" />
+
+        <ImageButton
+            android:id="@+id/articleMore"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/article_more_normal" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,21 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.heshicai.meirmw">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="getui.permission.GetuiService.com.heshicai.meirmw" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
+    <permission
+        android:name="getui.permission.GetuiService.com.heshicai.meirmw"
+        android:protectionLevel="normal" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hao"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@android:style/Theme.NoTitleBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.heshicai.meirmw.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.heshicai.meirmw.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.heshicai.meirmw.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.heshicai.meirmw.LoginSuccessActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGINSUCCESS" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.heshicai.meirmw.LoginRegisterActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGINREGISTER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.SettingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SETTING" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.NotificationSettingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.NOTIFICATIONSETTING" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.OfflineDownloadActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.OfflineDownload" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.ShareActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.ShareActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.OfflineDownloadSetActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.OfflineDownloadSet" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.WebActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.WEB" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.heshicai.meirmw.CommentsActivity" >
+
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.demo.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity" >
+        </activity>
+        <activity android:name="com.heshicai.meirmw.AboutUsSettingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.AboutUsSetting" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heshicai.meirmw.FeedbackSettingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.FeedbackSetting" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.PublishActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="1e5Un4IRYJ9J6Jzr3SFkD4" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="1yCMvnA8KL7q6NGS3Ips97" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="BqCuGT3vF49eS83fT9LGHA" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.heshicaihao.meirmw.receiver.PushDemoReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.etVyv7RHJ28BqN3KKCtKJ6" />
+            </intent-filter>
+        </receiver>
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.heshicai.meirmw"
+            android:process=":pushservice" />
+        <!-- android:authorities="downloads.第三方包名" -->
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.1e5Un4IRYJ9J6Jzr3SFkD4" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <!-- 个推SDK配置结束 -->
     </application>
 
 </manifest>

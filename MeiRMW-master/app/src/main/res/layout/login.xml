@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F3F7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF" >
+
+        <ImageButton
+            android:id="@+id/header_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:src="@drawable/return_btn" />
+
+        <TextView
+            style="@style/TitleItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/bellow_line_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_line"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/login_by_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="用微博账号快速登录"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/bellow_line_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/sina_login_btn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sina_weibo_login_btn"
+            android:drawableTop="@drawable/sina_logo_big"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="新浪微博"
+            android:textColor="#fffffefc"
+            android:textSize="14.5sp" />
+
+        <Button
+            android:id="@+id/qq_login_btn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/sina_login_btn"
+            android:background="@drawable/qq_weibo_login_btn"
+            android:drawableTop="@drawable/qq_logo_big"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="腾讯微博"
+            android:textColor="#ff909090"
+            android:textSize="14.5sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/bellow_line_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_line" />
+
+        <TextView
+            android:id="@+id/login_by_wumii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="用无觅账号登录"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/bellow_line_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_line" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/email_login_bg"
+        android:hint="邮箱"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/email_login_bg"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/green_btn"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/try_app_bg"
+        android:text="注册新账号" />
+
+</LinearLayout>

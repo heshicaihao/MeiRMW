@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_state_press">#55a1a1a1</color>
+    <color name="tab_btn_press">#d43c33</color>
+    
+    <color name="color1">#ff6960</color>
+    <color name="color2">#6b60ff</color>
+    <color name="color3">#ff39fd</color>
+    <color name="color4">#b7ff39</color>
+
+</resources>
