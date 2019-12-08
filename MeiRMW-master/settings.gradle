@@ -1,0 +1,4 @@
+rootProject.name='每日美文'
+
+include ':app', ':slidingmenu_library', ':menuDrawer_library', ':weibosdk_library', ':xutils_library'
+
