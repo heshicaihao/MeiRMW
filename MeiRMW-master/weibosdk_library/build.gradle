@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation files('libs/weibosdkcore.jar')
 
 }
@@ -38,7 +38,7 @@ ext {
     GITHUB_REPO_PATH = "E:/Note/maven.git/trunk"
     PUBLISH_GROUP_ID = 'com.heshicaihao'
     PUBLISH_ARTIFACT_ID = 'weibosdk'
-    PUBLISH_VERSION = '0.0.1'
+    PUBLISH_VERSION = '0.0.2'
 }
 
 uploadArchives {

@@ -31,8 +31,7 @@ dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     implementation 'com.heshicaihao:menudrawer:0.0.0'
     implementation 'com.heshicaihao:slidingmenu:0.0.0'
-//    implementation 'com.heshicaihao:weibosdk:0.0.0'
-    implementation 'com.heshicaihao:weibosdk:0.0.0'
+    implementation 'com.heshicaihao:weibosdk:0.0.2'
     implementation 'com.heshicaihao:xutils:2.6.6'
     implementation 'com.heshicaihao:fastjson:0.0.1'
     implementation files('libs/Android_SDK.jar')
