@@ -24,7 +24,6 @@ import com.heshicai.meirmw.fragment.Magazine;
 import com.heshicai.meirmw.fragment.Novel;
 import com.heshicai.meirmw.fragment.Writer;
 import com.heshicai.meirmw.lintener.OnLayoutOpenListener;
-import com.igexin.sdk.PushManager;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 public class MainActivity extends FragmentActivity implements
@@ -39,7 +38,6 @@ public class MainActivity extends FragmentActivity implements
         super.onCreate(savedInstanceState);
         // 消息推送
 
-        PushManager.getInstance().initialize(this.getApplicationContext());
 
         setContentView(R.layout.activity_main);
 

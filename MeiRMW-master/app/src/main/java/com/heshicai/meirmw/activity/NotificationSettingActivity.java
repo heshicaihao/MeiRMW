@@ -9,12 +9,12 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.Switch;
 
 import com.heshicai.meirmw.R;
-import com.igexin.sdk.PushManager;
+//import com.igexin.sdk.PushManager;
 
 public class NotificationSettingActivity extends Activity implements
 		OnCheckedChangeListener, OnClickListener {
 	private Switch mSwitch;
-	private final PushManager pushManager = new PushManager();
+//	private final PushManager pushManager = new PushManager();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,13 +34,13 @@ public class NotificationSettingActivity extends Activity implements
 
 	@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-		if (isChecked) {
-			isChecked = !isChecked;
-			pushManager.turnOnPush(getApplicationContext());
-		} else {
-			isChecked = !isChecked;
-			pushManager.turnOffPush(getApplicationContext());
-		}
+//		if (isChecked) {
+//			isChecked = !isChecked;
+//			pushManager.turnOnPush(getApplicationContext());
+//		} else {
+//			isChecked = !isChecked;
+//			pushManager.turnOffPush(getApplicationContext());
+//		}
 
 	}
 
