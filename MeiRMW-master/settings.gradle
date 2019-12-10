@@ -1,4 +1,4 @@
 rootProject.name='MeiRMW_V2.0.0'
 
-//include ':app', ':slidingmenu_library', ':menuDrawer_library', ':weibosdk_library', ':xutils_library'
-include ':app'
+include ':app', ':slidingmenu_library', ':menuDrawer_library', ':weibosdk_library', ':xutils_library'
+//include ':app'
