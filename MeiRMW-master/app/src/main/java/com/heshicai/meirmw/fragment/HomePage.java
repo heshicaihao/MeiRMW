@@ -19,7 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.heshicai.meirmw.R;
-import com.heshicai.meirmw.WebActivity;
+import com.heshicai.meirmw.activity.WebActivity;
 import com.heshicai.meirmw.adapter.HomePageAdapter;
 import com.heshicai.meirmw.bean.HomePageItem;
 import com.heshicai.meirmw.consts.URL;

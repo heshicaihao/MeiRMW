@@ -37,55 +37,55 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.LoginActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.LOGIN" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.heshicai.meirmw.LoginSuccessActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.LoginSuccessActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.LOGINSUCCESS" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.heshicai.meirmw.LoginRegisterActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.LoginRegisterActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.LOGINREGISTER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.SettingActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.SettingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SETTING" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.NotificationSettingActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.NotificationSettingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.NOTIFICATIONSETTING" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.OfflineDownloadActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.OfflineDownloadActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.OfflineDownload" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.ShareActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.ShareActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.ShareActivity" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.OfflineDownloadSetActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.OfflineDownloadSetActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.OfflineDownloadSet" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.WebActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.WebActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.WEB" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.heshicai.meirmw.CommentsActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.CommentsActivity" >
 
         </activity>
         <activity
@@ -106,12 +106,12 @@
         </activity>
         <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity" >
         </activity>
-        <activity android:name="com.heshicai.meirmw.AboutUsSettingActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.AboutUsSettingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.AboutUsSetting" />
             </intent-filter>
         </activity>
-        <activity android:name="com.heshicai.meirmw.FeedbackSettingActivity" >
+        <activity android:name="com.heshicai.meirmw.activity.FeedbackSettingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.FeedbackSetting" />
             </intent-filter>

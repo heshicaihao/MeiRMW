@@ -1,4 +1,4 @@
-package com.heshicai.meirmw;
+package com.heshicai.meirmw.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.heshicai.meirmw.R;
 
 public class FeedbackSettingActivity extends Activity implements
 		OnClickListener {

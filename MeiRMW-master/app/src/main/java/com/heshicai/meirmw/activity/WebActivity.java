@@ -1,4 +1,4 @@
-package com.heshicai.meirmw;
+package com.heshicai.meirmw.activity;
 
 import java.io.File;
 
@@ -24,6 +24,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Toast;
 
+import com.heshicai.meirmw.R;
 import com.tencent.weibo.sdk.android.component.ReAddActivity;
 
 public class WebActivity extends Activity implements OnClickListener,

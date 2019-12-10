@@ -1,4 +1,4 @@
-package com.heshicai.meirmw;
+package com.heshicai.meirmw.activity;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -20,6 +20,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
+import com.heshicai.meirmw.R;
 import com.heshicai.meirmw.consts.NetConst;
 import com.heshicai.meirmw.util.DataCleanManager;
 import com.heshicai.meirmw.util.IsWIFI;

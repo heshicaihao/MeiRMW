@@ -1,4 +1,4 @@
-package com.heshicai.meirmw;
+package com.heshicai.meirmw.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.heshicai.meirmw.R;
 import com.heshicai.meirmw.weibo.Constants;
 import com.heshicai.meirmw.weibo.ConstantsQQ;
 import com.heshicai.meirmw.weibo.ShareQQ;

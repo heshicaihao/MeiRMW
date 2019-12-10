@@ -1,4 +1,4 @@
-package com.heshicai.meirmw;
+package com.heshicai.meirmw.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.heshicai.meirmw.R;
 
 public class OfflineDownloadActivity extends Activity implements
 		OnClickListener {

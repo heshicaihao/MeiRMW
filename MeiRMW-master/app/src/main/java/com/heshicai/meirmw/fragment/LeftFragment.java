@@ -14,9 +14,9 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
-import com.heshicai.meirmw.LoginActivity;
+import com.heshicai.meirmw.activity.LoginActivity;
 import com.heshicai.meirmw.R;
-import com.heshicai.meirmw.SettingActivity;
+import com.heshicai.meirmw.activity.SettingActivity;
 import com.heshicai.meirmw.adapter.LeftAdapter;
 import com.heshicai.meirmw.bean.LeftOptions;
 import com.heshicai.meirmw.consts.Option;

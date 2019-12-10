@@ -1,4 +1,4 @@
-package com.heshicai.meirmw;
+package com.heshicai.meirmw.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.heshicai.meirmw.R;
 import com.heshicai.meirmw.adapter.CommentAdapter;
 
 public class CommentsActivity extends Activity implements OnClickListener {
