@@ -1,5 +1,7 @@
 package com.heshicai.meirmw.util;
 
+import android.os.AsyncTask;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -39,12 +41,14 @@ public class HttpUtil {
 						response.append(line);
 					}
 					if(listener!=null){
-						listener.onSuccess(response.toString());
+						runUIcallback(listener,response.toString(),true);
+//						listener.onSuccess(response.toString());
 					}
 					
 				} catch (Exception e) {
 					if(listener!=null){
-						listener.onFailure(e);
+						runUIcallback(listener, e.toString(),false);
+//						listener.onFailure(e);
 					}
 				}finally{
 					if(connection!=null){
@@ -54,5 +58,38 @@ public class HttpUtil {
 			}
 		}).start();
 		
+	}
+
+	/**
+	 * 转回主线程
+	 * @param callback
+	 * @param result
+	 * @param isOK
+	 */
+	public  static void runUIcallback(final HttpCallbackListener callback,final String result,final boolean isOK)
+	{
+		AsyncTask asyncTask=new AsyncTask() {
+			@Override
+			protected Object doInBackground(Object[] params) {
+				return null;
+			}
+
+			@Override
+			protected void onPostExecute(Object o) {
+				super.onPostExecute(o);
+				if (isOK){
+					callback.onSuccess(result);
+				}else{
+					callback.onFailure(new Exception());
+				}
+
+			}
+
+			@Override
+			protected void onProgressUpdate(Object[] values) {
+				super.onProgressUpdate(values);
+			}
+		};
+		asyncTask.execute();
 	}
 }
