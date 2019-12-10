@@ -12,3 +12,6 @@
 /MeiRMW-master/weibosdk_library/*.iml
 /MeiRMW-master/xutils_library/build
 /MeiRMW-master/xutils_library/*.iml
+/MeiRMW-master/build
+/MeiRMW-master/app/debug
+/MeiRMW-master/app/release

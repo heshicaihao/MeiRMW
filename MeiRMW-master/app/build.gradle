@@ -7,15 +7,40 @@ android {
         applicationId "com.heshicai.meirmw"
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 8
+        versionName "2.0.0"
 
     }
+
+    signingConfigs {
+        debug {
+            storeFile file('../release.jks')
+            storePassword "MeiRMW_1024"
+            keyAlias "MeiRMW"
+            keyPassword "MeiRMW_1024"
+        }
+        release {
+            storeFile file('../release.jks')
+            storePassword "MeiRMW_1024"
+            keyAlias "MeiRMW"
+            keyPassword "MeiRMW_1024"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
         }
+    }
+
+    android.applicationVariants.all { variant ->
+
+        variant.outputs.all {
+            outputFileName = "MeiRMW_${variant.versionCode}_v${variant.versionName}_${buildType.name}.apk"
+        }
+
     }
 
     sourceSets {
