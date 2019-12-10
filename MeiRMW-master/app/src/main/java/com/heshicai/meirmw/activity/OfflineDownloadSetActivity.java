@@ -17,6 +17,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
 
+import com.heshicai.meirmw.R;
+
 public class OfflineDownloadSetActivity extends Activity implements
 		OnClickListener {
 	private View loadTog;

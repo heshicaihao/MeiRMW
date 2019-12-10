@@ -8,6 +8,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.Switch;
 
+import com.heshicai.meirmw.R;
 import com.igexin.sdk.PushManager;
 
 public class NotificationSettingActivity extends Activity implements
