@@ -11,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0"
 
+        ndk {
+            abiFilters 'armeabi', 'mips', 'x86'
+        }
 
     }
 
@@ -24,8 +27,8 @@ android {
 }
 
 dependencies {
-//    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation files('libs/weibosdkcore.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation files('libs/weibosdkcore.jar')
 
 }
 
@@ -38,7 +41,7 @@ ext {
     GITHUB_REPO_PATH = "E:/Note/maven.git/trunk"
     PUBLISH_GROUP_ID = 'com.heshicaihao'
     PUBLISH_ARTIFACT_ID = 'weibosdk'
-    PUBLISH_VERSION = '0.0.2'
+    PUBLISH_VERSION = '0.0.4'
 }
 
 uploadArchives {
