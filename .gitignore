@@ -4,14 +4,7 @@
 /MeiRMW-master/每日美文.iml
 /MeiRMW-master/app/build
 /MeiRMW-master/app/*.iml
-/MeiRMW-master/menudrawer_library/build
-/MeiRMW-master/menudrawer_library/*.iml
-/MeiRMW-master/slidingmenu_library/build
-/MeiRMW-master/slidingmenu_library/*.iml
-/MeiRMW-master/weibosdk_library/build
-/MeiRMW-master/weibosdk_library/*.iml
-/MeiRMW-master/xutils_library/build
-/MeiRMW-master/xutils_library/*.iml
 /MeiRMW-master/build
 /MeiRMW-master/app/debug
 /MeiRMW-master/app/release
+/MeiRMW-master/app/libs

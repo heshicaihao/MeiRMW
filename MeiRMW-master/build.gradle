@@ -21,7 +21,8 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://raw.githubusercontent.com/heshicaihao/maven/master"}
+//        maven { url "https://raw.githubusercontent.com/heshicaihao/maven/master"}
+        maven { url "https://gitee.com/androidnexus/maven/raw/master"}
 //        maven { url 'file:/E:/Note//maven.git/trunk' }
     }
 }

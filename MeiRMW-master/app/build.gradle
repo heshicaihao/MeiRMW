@@ -60,5 +60,7 @@ dependencies {
     implementation 'com.heshicaihao:slidingmenu:0.0.0'
     implementation 'com.heshicaihao:weibosdk:0.0.4'
     implementation 'com.heshicaihao:xutils:2.6.6'
+    implementation 'com.tencent:weibo_sdk:1.0'
+    implementation 'com.tencent:weibo_sdk_component:1.0'
 
 }
